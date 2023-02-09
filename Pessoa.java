@@ -1,16 +1,18 @@
 public class Pessoa {
     private String nomeDaPessoa;
     private Universidade universidade;
+    private Departamento departamento;
 
-    Pessoa newton = new Pessoa("Newton", universidade);
-    Pessoa einstein = new Pessoa("Einstein", universidade);
+    Pessoa newton = new Pessoa("Newton", universidade,departamento);
+    Pessoa einstein = new Pessoa("Einstein", universidade,departamento);
 
     Pessoa(){
 
     }
-    Pessoa(String nomeDaPessoa,Universidade universidade) {
+    Pessoa(String nomeDaPessoa,Universidade universidade,Departamento departamento) {
         this.nomeDaPessoa = nomeDaPessoa;
         this.universidade = universidade;
+        this.departamento = departamento;
     }
 
     public String retonaDados() {

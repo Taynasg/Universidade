@@ -5,7 +5,11 @@ public class Universidade {
     Universidade universidadeDoNewton = new Universidade("Cambrage");
 
     private String nomeDaUniversidade;
+    Departamento departamento;
 
+    Universidade(){
+
+    }
 
     Universidade(String nomeDaUniversidade){
         this.nomeDaUniversidade = nomeDaUniversidade;
