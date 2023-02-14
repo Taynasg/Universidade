@@ -1,23 +1,29 @@
 public class Universidade {
+    private String nome;
+    private Departamento departamento;
 
-    Pessoa pessoa = new Pessoa();
-    Universidade universidadeDoEinstein = new Universidade("Princeton");
-    Universidade universidadeDoNewton = new Universidade("Cambrage");
-
-    private String nomeDaUniversidade;
-    Departamento departamento;
-
-    Universidade(){
-
-    }
-
-    Universidade(String nomeDaUniversidade){
-        this.nomeDaUniversidade = nomeDaUniversidade;
+    Universidade(String nomeDaUniversidade) {
+        this.nome = nomeDaUniversidade;
     }
 
     public String retornaNome() {
-        return "Nome: " + nomeDaUniversidade;
+        return "Nome: " + nome;
 
     }
 
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public Departamento getDepartamento() {
+        return departamento;
+    }
+
+    public void setDepartamento(Departamento departamento) {
+        this.departamento = departamento;
+    }
 }

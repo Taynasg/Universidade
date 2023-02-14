@@ -1,36 +1,46 @@
 public class Pessoa {
-    private String nomeDaPessoa;
+    private String nome;
     private Universidade universidade;
     private Departamento departamento;
 
-    Pessoa newton = new Pessoa("Newton", universidade,departamento);
-    Pessoa einstein = new Pessoa("Einstein", universidade,departamento);
-
-    Pessoa(){
-
-    }
-    Pessoa(String nomeDaPessoa,Universidade universidade,Departamento departamento) {
-        this.nomeDaPessoa = nomeDaPessoa;
+    Pessoa(String nome, Universidade universidade, Departamento departamento) {
+        this.nome = nome;
         this.universidade = universidade;
         this.departamento = departamento;
     }
 
-    public String retonaDados() {
-        return "Nome: " + nomeDaPessoa + " \n " +
-                "Universidade: " + universidade;
+    Pessoa() {
+
     }
 
-    public void setNomeDaPessoa(String nomeDaPessoa) {
-        this.nomeDaPessoa = nomeDaPessoa;
+    public String retonaDados() {
+        return "  Nome: " + nome + " \n " +
+                " Universidade: " + universidade.getNome() + " \n  " +
+                " Departamento: " + departamento.getNome();
+
     }
-    public String getNomeDaPessoa() {
-        return nomeDaPessoa;
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getNome() {
+        return nome;
     }
 
     public Universidade getUniversidade() {
         return universidade;
     }
+
     public Universidade setUniversidade(Universidade universidade) {
         return this.universidade = universidade;
+    }
+
+    public Departamento getDepartamento() {
+        return departamento;
+    }
+
+    public void setDepartamento(Departamento departamento) {
+        this.departamento = departamento;
     }
 }

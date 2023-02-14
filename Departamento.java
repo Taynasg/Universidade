@@ -1,18 +1,22 @@
 public class Departamento {
 
-Departamento departamento = new Departamento();
+    private String nome;
 
-    private String nomeDoDepartamento;
+    Departamento (String nomeDoDePartamento){
+        this.nome = nomeDoDePartamento;
+    }
 
     public String retornaDepartamento() {
-        return "Nome: " + nomeDoDepartamento;
+        return "Nome: " + this.nome;
 
     }
 
+    public String getNome() {
+        return nome;
+    }
 
-
-
-
-
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
 
 }
